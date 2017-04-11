@@ -169,7 +169,7 @@ body {
   top:50%;
   transform:translateY(-50%) rotate(45deg);
   border-radius:3px;
-  right:-28px; 
+  right:-29px; 
 }
 
 [tooltip-size="bigger"]:before {
