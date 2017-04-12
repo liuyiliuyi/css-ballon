@@ -34,18 +34,18 @@ body {
   text-align:center;
   white-space:nowrap;
   left: 50% ;
-  transform:translatex(-50%);
+  transform:translatex(-50%) translatey(-100%);
   opacity:0;
-  //margin-left:-33px;
   transition:all 0.2s ease-out;
-  bottom:30px;
+  margin-top:-14px;
+  top:20px;
 }
 
 
 
 [button-direct="up"]:hover:before {
   opacity:1;
-  bottom:61px;
+  top:0;
 }
 
 
@@ -64,15 +64,15 @@ body {
   left:50%;
   transform:translateX(-50%) rotate(-45deg);;
   border-radius:3px;
-
   opacity:0;
-  bottom:30px;
+  top:20px;
+  margin-top:-21px;
   transition:all 0.2s ease-out;
 }
 
 [button-direct="up"]:hover:after {
+  top:0;
   opacity:1;
-  bottom:56px;
 }
 
 
@@ -118,9 +118,11 @@ body {
   border-radius:4px;
   position:absolute;
   top:50%;
-  transform:translateY(-50%);
+  transform:translateY(-50%) translateX(-100%);
+  margin-left:-14px;
   white-space: nowrap;
-  left:-161px;
+  left:0;
+ 
 }
 
 
@@ -135,10 +137,9 @@ body {
   height:0;
   position:absolute;
   top:50%;
-  transform:translateY(-50%) rotate(225deg);;
+  left:-21px;
+  transform:translateY(-50%) rotate(225deg);
   border-radius:3px;
-  left:-26px;
-
 }
   
 [button-direct="right"]:before {
@@ -150,9 +151,11 @@ body {
   border-radius:4px;
   position:absolute;
   top:50%;
-  transform:translateY(-50%);
+  transform:translateY(-50%) translateX(100%);
   white-space: nowrap;
-  right:-164px;
+  right:0;
+  margin-right:-14px;
+  
 }
 
 
@@ -169,7 +172,7 @@ body {
   top:50%;
   transform:translateY(-50%) rotate(45deg);
   border-radius:3px;
-  right:-29px; 
+  right:-21px; 
 }
 
 [tooltip-size="bigger"]:before {
@@ -177,4 +180,3 @@ body {
   min-width:300px;
   
 }
-  
